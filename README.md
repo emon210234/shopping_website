@@ -5,6 +5,12 @@ The project currently covers the essential pages and basic interactivity.
 
 ---
 
+## 🌐 Live Demo  
+
+👉 [View Website](https://your-username.github.io/your-repo/)  
+
+---
+
 ## 📑 Pages
 
 - **Home** – Landing page showcasing the store  
