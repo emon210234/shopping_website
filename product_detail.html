@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a>Product</a>
+              <ul class="p-2">
+                <li><a href="./product_detail.html">Details</a></li>
+                <li><a href="./category_page.html">Category</a></li>
+              </ul>
+            </li>
+            <li><a href="./cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">SHOP.CO</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <details>
+              <summary>Product</summary>
+              <ul class="p-2">
+                <li><a href="./product_detail.html">Details</a></li>
+                <li><a href="./category_page.html">Category</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="./cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Sign in</a>
+      </div>
+    </div>
+
+    <!-- Showcase -->
+    <section>
+      <div class="flex space-y-6 flex-col m-5 ">
+        <div class="xl:flex xl:gap-10 xl:items-center xl:justify-center">
+          <div class="xl:w-1/2 xl:flex xl:flex-row xl:gap-20 xl:p-30">
+            <div class="xl:w-2/3">
+              <img
+                class="w-full h-auto object-contain"
+                src="assets/product_detail/image 1.png"
+                alt=""
+              />
+            </div>
+
+            <div class="flex gap-6 max-sm:mt-5 justify-between xl:flex xl:flex-col xl:gap-0 xl:justify-between">
+              <img class="max-sm:w-1/3  xl:grow-0 xl:shrink-0" src="assets/product_detail/image 2.png" alt="" />
+              <img class="max-sm:w-1/3 xl:grow-0 xl:shrink-0" src="assets/product_detail/image 5.png" alt="" />
+              <img class="max-sm:w-1/3 xl:grow-0 xl:shrink-0" src="assets/product_detail/image 6.png" alt="" />
+            </div>
+          </div>
+
+          <div class="xl:w-1/2 xl:flex xl:flex-col xl:gap-5 xl:p-10">
+            <div class="text-4xl mt-5 max-sm:mt-20 font-extrabold">
+              <h1>ONE LIFE GRAPHIC T-SHIRT</h1>
+            </div>
+            <div class="icons text-2xl max-sm:my-5 text-orange-300">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span class="text-black">
+                  5/<span class="font-extralight">5</span>
+              </span>
+            </div>
+            <div class="flex gap-5 max-sm:my-5">
+                <h1 class=" text-4xl font-extrabold">
+                    $260
+                </h1>
+                <strike class=" text-4xl font-semibold opacity-30">$300</strike>
+                <button class="text-xl rounded-full bg-red-100 px-4 text-red-700">
+                    -40%
+                </button>
+            </div>
+            <p class="text-xl font-extralight mr-5 max-sm:my-10 xl:mr-100">
+                This graphic t-shirt which is perfect
+                for any occasion. Crafted from a soft and
+                breathable fabric, it offers superior
+                comfort and style.
+            </p>
+            <div>
+                <hr class="mb-5 opacity-30">
+                <p class="text-xl font-extralight">
+                    Select Colors
+                </p>
+                <span class="mt-5 flex w-1/2 justify-start gap-4 xl:w-1/5">
+                    <button class="bg-indigo-950 text-white basis-sm rounded-full aspect-square">
+                        <i class="fa fa-check"></i>
+                    </button>
+                    <button class="bg-pink-900 text-white basis-sm  rounded-full aspect-square">
+                    </button>
+                    <button class="bg-cyan-950 text-white basis-sm rounded-full aspect-square">
+                    </button>
+                </span>
+            </div>
+            <div>
+                <hr class="my-5 border opacity-30">
+                <p class="text-xl font-extralight">
+                    Choose Size
+                </p>
+                <div class="flex font-light space-x-4 justify-between flex-wrap mt-5">
+                    <button class="bg-gray-200 p-3 flex-1 rounded-full">
+                        Small
+                    </button>
+                    <button class="bg-gray-200 flex-1 p-3 rounded-full">
+                        Medium
+                    </button>
+                    <button class="bg-black flex-1 text-white p-3 rounded-full">
+                        Large
+                    </button>
+                    <button class="bg-gray-200 flex-1 p-3 rounded-full">
+                        X-Large
+                    </button>
+                </div>
+            </div>
+            <hr class="my-5 border opacity-30">
+            <div class="flex mt-3 justify-start gap-4 xl:justify-center">
+                <div class="flex gap-6 bg-gray-200 w-fit px-6 py-3 xl:justify-center rounded-full xl:text-xl">
+                    <button class="text-2xl font-light">
+                        -
+                    </button>
+                    <button class="text-xl">
+                        1
+                    </button>
+                    <button class="text-2xl">
+                        +
+                    </button>
+                </div>
+                <div class="px-6 py-3 text-center bg-black text-white rounded-full flex xl:text-xl justify-center flex-1 xl:flex-initial">
+                    <button class="">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- CLIENT REVIEW -->
+    
+    <section class="mx-5 my-15 flex flex-col">
+        <div class="flex text-xl justify-between xl:justify-center xl:gap-50 xl:mt-30 xl:text-2xl">
+            <div>
+                <p class="font-extralight">
+                    Product Details
+                    <hr class="border opacity-30">
+                </p>
+            </div>
+
+            <div>
+                <p class="">
+                    Rating & Reviews
+                    <hr class="border">
+                </p>
+            </div>
+
+            <div class="">
+                <p class="font-extralight">
+                    FAQs
+                    <hr class="border opacity-30">
+                </p>
+            </div>
+        </div>
+
+        <div class="flex my-10 items-center gap-4 xl:justify-center xl:mt-20 xl:mx-30">
+            <h1 class="mr-auto xl:text-3xl xl:font-semibold">
+                All Reviews <span class="font-extralight">(451)</span>
+            </h1>
+
+            <div class="bg-gray-200 rounded-full p-2 xl:p-4">
+                <img class="h-full w-full object-cover" src="assets/product_detail/Frame.png" alt="">
+            </div>
+
+            <div class="bg-black text-white xl:text-xl rounded-full p-4">
+                <button>
+                    Write a Review
+                </button>
+            </div>
+        </div>
+
+        <div class="xl:flex xl:flex-row xl:text-xl">
+          <div class="flex flex-col gap-2 xl:gap-5 mx-4 my-5 border-gray-300 border-1 rounded-2xl p-4">
+          <div class="text-orange-300">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="flex gap-2">
+              <h2 class="font-semibold xl:text-2xl">Samantha D.</h2>
+              <button class="bg-green-700 text-white w-6 h-6 rounded-full aspect-square">
+                      <i class="fa fa-check"></i>
+                </button>
+          </div>
+          <p class="font-extralight xl:text-xl">
+            "The t-shirt exceeded my expectations! The Colors
+            are vibrant and the print quality is top-notch.
+            Being a UI/UX designer myself, I'm quite picky
+            about aesthetics, and this t-shirt definitely
+            gets a thumbs up from me."
+          </p>
+          <p>
+              Posted on August 15, 2023
+          </p>
+                </div>
+          
+          <div
+          class="flex flex-col gap-2 xl:gap-5 mx-4 my-5 border-gray-300 border-1 rounded-2xl p-4"
+                >
+          <div class="text-orange-300">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="flex gap-2">
+              <h2 class="font-semibold xl:text-2xl">Alex M.</h2>
+              <button class="bg-green-700 text-white w-6 h-6 rounded-full aspect-square">
+                      <i class="fa fa-check"></i>
+                </button>
+          </div>
+          <p class="font-extralight xl:text-xl">
+            "I absolutely love this t-shirt! The design is unique
+            and the fabric so comfortable. As a fellow designer
+            , I appreciate the attention to detail. It's become
+            my favorite go-to-shirt"
+          </p>
+          <p>
+              Posted on August 14, 2023
+          </p>
+                </div>
+          
+                <div
+          class="flex flex-col gap-2 xl:gap-5 mx-4 my-5 border-gray-300 border-1 rounded-2xl p-4"
+                >
+          <div class="text-orange-300">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          
+          </div>
+          <div class="flex gap-2">
+              <h2 class="font-semibold xl:text-2xl">Ethan R.</h2>
+              <button class="bg-green-700 text-white w-6 h-6 rounded-full aspect-square">
+                      <i class="fa fa-check"></i>
+                </button>
+          </div>
+          <p class="font-extralight xl:text-xl">
+            "This t-shirt is a must-have for anyone for
+            anyone who appreciates good design. The
+            minimalistic yet stylish pattern caught my eye,
+            and the fit is perfect. I can see the designer's
+            touch in every aspect of this shirt."
+          </p>
+          <p>
+              Posted on August 16, 2023.
+          </p>
+                </div>
+        </div>
+
+      <div class="border border-gray-400 w-fit p-3 xl:text-xl xl:mt-10 rounded-full self-center">
+        <button>
+            Load More Reviews
+        </button>
+      </div>
+    </section>
+
+    <!-- SUGGESTION -->
+
+    <section class="top-selling flex flex-col">
+      <h1 class="text-5xl my-20 mx-10 text-center font-extrabold self-center xl:text-6xl">YOU MIGHT ALSO LIKE</h1>
+
+      <div class="preview flex flex-col items-center gap-10 xl:flex xl:flex-row xl:mx-15 xl:justify-center">
+        <div class="flex flex-col gap-3 items-center">
+          <div>
+            <img src="assets/top_selling/Frame 60.png" alt="" />
+          </div>
+          <h2 class="font-semibold xl:text-2xl">Vertical Stripped Shirt</h2>
+          <div class="text-orange-300 xl:text-2xl">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span class="text-black">
+              5/<span class="font-extralight">5</span>
+            </span>
+          </div>
+          <span class="font-semibold text-3xl"> $212 </span>
+        </div>
+
+        <div>
+          <div class="flex flex-col gap-3 items-center">
+            <img src="assets/new_arrival/Frame 58.png" alt="" />
+            <h2 class="font-semibold xl:text-2xl">Courage Graphic T-shirt</h2>
+            <div class="text-orange-300 xl:text-2xl">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-regular"></i>
+              <span class="text-black">
+                4/<span class="font-extralight">5</span>
+              </span>
+            </div>
+
+            <span class="font-semibold text-3xl"> $145 </span>
+          </div>
+        </div>
+           
+      </div>
+      <button
+          class="font-semibold border-gray-500 border-1 p-5 rounded-full mt-10 self-stretch mx-8 xl:mx-200 xl:mt-10"
+        >
+          View All
+        </button> 
+    </section>
+
+    <section class="bg-black flex flex-col mx-4 p-5 py-10 rounded-3xl my-20 xl:flex xl:flex-row xl:mx-30 xl:justify-center">
+      <h1 class="text-4xl text-white font-extrabold xl:text-6xl xl:w-1/2 xl:px-5">
+        STAY UP TO DATE ABOUT OUR LATEST OFFERS
+      </h1>
+
+      <div class="flex flex-col gap-4 mt-10  xl:mt-0 xl:w-1/3">
+        <input
+          class="bg-white text-center rounded-full p-3 xl:w-"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
+        <button class="bg-white text-black p-3 rounded-full">
+          Subscribe to Newsletter
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <section class="xl:mx-30 xl:mt-50">
+      <div class="p-2 mx-2 space-y-4 xl:flex xl:justify-between">
+        <div class="xl:flex xl:flex-col xl:gap-5 xl:w-1/5 flex flex-col gap-5">
+          <h1 class="text-3xl font-extrabold xl:text-5xl">SHOP.CO</h1>
+          <p class="font-extralight xl:text-xl">
+            We have clothes that suits your style and which you're proud to wear.
+            From women to men.
+          </p>
+          <div class="text-black-300 space-x-3 text-lg xl:text-2xl">
+            <span class="border-1 rounded-full p-1"
+              ><i class="fa-brands fa-facebook"></i
+            ></span>
+            <span class="border-1 rounded-full p-1"
+              ><i class="fa-brands fa-instagram"></i
+            ></span>
+            <span class="border-1 rounded-full p-1"
+              ><i class="fa-brands fa-twitter"></i
+            ></span>
+            <span class="border-1 rounded-full p-1"
+              ><i class="fa-brands fa-github"></i
+            ></span>
+          </div>
+        </div>
+        <div class="flex mt-10 xl:mt-0 relative xl:gap-70">
+          <div class="flex flex-col gap-3">
+            <h1 class="text-xl font-semibold xl:text-2xl">COMPANY</h1>
+            <p class="text-md xl:text-xl font-extralight">About</p>
+            <p class="text-md xl:text-xl font-extralight">Features</p>
+            <p class="text-md xl:text-xl font-extralight">Works</p>
+            <p class="text-md xl:text-xl font-extralight">Career</p>
+          </div>
+          <div class="flex flex-col gap-3 max-sm:absolute right-7">
+            <h1 class="text-xl font-semibold xl:text-2xl">HELP</h1>
+            <p class="text-md xl:text-xl font-extralight">Customer Support</p>
+            <p class="text-md xl:text-xl font-extralight">Delivery Details</p>
+            <p class="text-md xl:text-xl font-extralight">Terms & Conditions</p>
+            <p class="text-md xl:text-xl font-extralight">Privacy Policy</p>
+          </div>
+        </div>
+        <div class="flex mt-10 xl:mt-0 relative xl:gap-70">
+          <div class="flex flex-col gap-3">
+            <h1 class="text-xl font-semibold xl:text-2xl">FAQ</h1>
+            <p class="text-md xl:text-xl font-extralight">About</p>
+            <p class="text-md xl:text-xl font-extralight">Features</p>
+            <p class="text-md xl:text-xl font-extralight">Works</p>
+            <p class="text-md xl:text-xl font-extralight">Career</p>
+          </div>
+          <div class="flex flex-col gap-3 max-sm:absolute right-7">
+            <h1 class="text-xl font-semibold xl:text-2xl">HELP</h1>
+            <p class="text-md xl:text-xl font-extralight">Customer Support</p>
+            <p class="text-md xl:text-xl font-extralight">Delivery Details</p>
+            <p class="text-md xl:text-xl font-extralight">Terms & Conditions</p>
+            <p class="text-md xl:text-xl font-extralight">Privacy Policy</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="mt-10 font-extralight text-center xl:mt-20 xl:text-xl">
+          Shop.co @ 2000-2023, All Right Reserved
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/footer/Frame 53.png" alt="" />
+        </div>
+    </section>
+    
+  </body>
+</html>
