@@ -74,13 +74,13 @@
 
     <section class="category mx-4 xl:flex xl:flex-row xl:mt-10 xl:ml-10 xl:gap-20">
       
-        <div class="filters max-sm:hidden xl:flex xl:flex-col">
+        <div class="max-sm:hidden xl:flex xl:flex-col" id="menu">
           <div class="title flex justify-center items-center">
           
                   <div class="text-xl font-semibold">
                       Filters
                   </div>
-                  <i class="fa fa-xmark ml-auto text-2xl opacity-40 filter"></i>
+                  <i class="fa fa-xmark ml-auto text-2xl opacity-40 filter" id="closeBtn"></i>
           </div>
           <hr class="border my-4 opacity-10">
           <div class="space-y-4">
@@ -652,5 +652,26 @@
           <img src="assets/footer/Frame 53.png" alt="" />
         </div>
     </section>
+
+    <script>
+        const filterBtn = document.getElementById("filterBtn");
+        const menu = document.getElementById("menu");
+        const closeBtn = document.getElementById("closeBtn");
+
+        filterBtn.addEventListener("click", () => {
+            if (window.innerWidth < 640) {
+                menu.classList.remove("max-sm:hidden");
+                menu.classList.add("max-sm:block");
+            }
+        });
+
+        closeBtn.addEventListener("click", () => {
+            if (window.innerWidth < 640) {
+                menu.classList.remove("max-sm:block");
+                menu.classList.add("max-sm:hidden");
+            }
+        });
+
+    </script>
 </body>
 </html>
