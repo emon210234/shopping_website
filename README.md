@@ -7,7 +7,7 @@ The project currently covers the essential pages and basic interactivity.
 
 ## 🌐 Live Demo  
 
-👉 [View Website](https://your-username.github.io/your-repo/)  
+[View Website](https://emon210234.github.io/shopping_website/)  
 
 ---
 
